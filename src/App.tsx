@@ -3,7 +3,13 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
-  return <div></div>;
+  let count = 0;
+  return (
+    <div>
+      <h1>{count}</h1>
+      <button> 증가</button>
+    </div>
+  );
 }
 
 export default App;
