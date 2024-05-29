@@ -4,6 +4,18 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
+  return (
+    <div>
+      <MkButton></MkButton>
+      <MkButton></MkButton>
+      <MkButton></MkButton>
+      <MkButton></MkButton>
+      <MkButton></MkButton>
+    </div>
+  );
+}
+
+function MkButton() {
   const 리턴값 = useState(0);
   const count = 리턴값[0];
   const setCount = 리턴값[1];
