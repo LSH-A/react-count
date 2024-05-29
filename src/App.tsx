@@ -4,15 +4,11 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
-  return (
-    <div>
-      <MkButton></MkButton>
-      <MkButton></MkButton>
-      <MkButton></MkButton>
-      <MkButton></MkButton>
-      <MkButton></MkButton>
-    </div>
-  );
+  const CounterArray = [];
+  for (let i = 0; i < 1000; i++) {
+    CounterArray.push(<MkButton></MkButton>);
+  }
+  return <div>{CounterArray}</div>;
 }
 
 function MkButton() {
